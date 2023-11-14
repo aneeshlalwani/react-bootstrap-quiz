@@ -1,17 +1,19 @@
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import logo from "../assests/images/logo.png";
 
 const Header = () => {
-  const fastechTitle = {
-    color: "#9B51E0",
-  }
+//   const fastechTitle = {
+//     color: "#9B51E0",
+//   }
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
-        <Navbar.Brand href="#" style={fastechTitle}>FASTECH</Navbar.Brand>
+        <Navbar.Brand href="#">
+            <img src={logo} alt="Company-logo" />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
